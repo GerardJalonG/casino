@@ -2,13 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Jugador {
-    private String id;
     private String nombre;
     private double saldo;
     private List<Carta> mano; 
     
-    public Jugador(String id, String nombre, double saldo) {
-        this.id = id;
+    public Jugador(String nombre, double saldo){
         this.nombre = nombre;
         this.saldo = saldo;
         this.mano = new ArrayList<Carta>(); 
