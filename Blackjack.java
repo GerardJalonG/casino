@@ -27,6 +27,7 @@ public class Blackjack {
             if (respuesta.equalsIgnoreCase("s")) {
                 jugador.recibirCarta(mazo.repartirCarta());
                 jugador.mostrarMano();
+                System.out.println("\n");
             } else {
                 break;
             }
@@ -37,12 +38,11 @@ public class Blackjack {
 
         while (crupier.calcularPuntos() < 17) {
             crupier.recibirCarta(mazo.repartirCarta());
-            System.out.println("Crupier toma una carta...");
+            System.out.println("Crupier toma una carta...\n");
             crupier.mostrarMano();
         }
 
         determinarGanador();
-        sc.close();
     }
 
     private void determinarGanador() {
