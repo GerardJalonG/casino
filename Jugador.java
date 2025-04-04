@@ -12,6 +12,10 @@ public class Jugador {
         this.mano = new ArrayList<Carta>(); 
 
     }
+
+    public void limpiarMano() {
+        mano.clear();
+    }
     
     public void recibirCarta(Carta carta) {
         mano.add(carta);

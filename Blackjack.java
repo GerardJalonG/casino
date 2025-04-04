@@ -12,6 +12,9 @@ public class Blackjack {
     }
     
     public void jugar() {
+        System.out.println("Bienvenido a Blackjack, " + jugador.getNombre() + "!");
+
+        jugador.limpiarMano();
         jugador.recibirCarta(mazo.repartirCarta());
         jugador.recibirCarta(mazo.repartirCarta());
         crupier.recibirCarta(mazo.repartirCarta());
