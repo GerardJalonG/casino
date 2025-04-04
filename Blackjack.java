@@ -12,7 +12,7 @@ public class Blackjack {
     }
     
     public void jugar() {
-        System.out.println("Bienvenido a Blackjack, " + jugador.getNombre() + "!");
+        System.out.println("\nBienvenido a Blackjack, " + jugador.getNombre() + "!");
 
         jugador.limpiarMano();
         jugador.recibirCarta(mazo.repartirCarta());
@@ -25,7 +25,7 @@ public class Blackjack {
 
         Scanner sc = new Scanner(System.in);
         while (jugador.calcularPuntos() < 21) {
-            System.out.println("¿Quieres otra carta? (s/n)");
+            System.out.println("\n¿Quieres otra carta? (s/n)");
             String respuesta = sc.nextLine();
             if (respuesta.equalsIgnoreCase("s")) {
                 jugador.recibirCarta(mazo.repartirCarta());
